@@ -3,7 +3,7 @@ Documentation     I want to move my character. If they attempt to move past a bo
 Test Template     Move character
 Library           MoveLibrary.py
 
-*** Test Cases ***                  StartingX     StartingY     StartingMoveCount     Direction     EndingX     EndingY     EndingMoveCount
+*** Test Cases ***                  startingX     startingY     startingMoveCount     direction     endingX     endingY     endingMoveCount
 Move in the middle of the board     5             5             1                     NORTH         4           5           2
 Move on the edge of the board       1             1             5                     SOUTH         1           2           6
 
