@@ -4,29 +4,28 @@ from levelup.position import Position
 class TestPosition(unittest.TestCase):
 
     def test_initialization(self):
-        testobj = Position()
-        expected_x_coordinate = 0
-        expected_y_coordinate = 0
+        testobj = Position(1,1)
+        expected_x_coordinate = 1
+        expected_y_coordinate = 1
         self.assertEqual(
             expected_x_coordinate,
-            testobj.point[0]
+            testobj.x
         )
         self.assertEqual(
             expected_y_coordinate,
-            testobj.point[1]
+            testobj.y
         )
 
     def test_assignment(self):
-        testobj = Position()
-        assigned_x = 1
-        assigned_y = 1
-        testobj.setPosition(assigned_x, assigned_y)
+        assigned_x = 2
+        assigned_y = 2
+        testobj = Position(assigned_x, assigned_y)
         self.assertEqual(
             assigned_x,
-            testobj.point[0]
+            testobj.x
         )
         self.assertEqual(
             assigned_y,
-            testobj.point[1]
+            testobj.y
         )
 
