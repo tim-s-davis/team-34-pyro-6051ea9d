@@ -11,3 +11,9 @@ class TestCharacterInitWithoutName(TestCase):
     def test_init(self):
         testobj = Character("")
         self.assertEqual('Character', testobj.name)
+
+class TestCharacterEnterMap(TestCase):
+    def test_init(self):
+        testobj = Character("")
+        testvar = testobj.enterMap()
+        self.assertEqual(testvar, 'Yes')
