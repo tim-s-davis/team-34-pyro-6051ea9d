@@ -3,7 +3,7 @@ Documentation
 ...    I want to move my character. If they attempt to move past a boundary, the move results in no change in position.
 ...     
 ...    Here's a picture of one of our working models from the camp:
-...    https://raw.githubusercontent.com/level-up-program/team-34-pyro-6051ea9d/main/tests/robot/images/IMG_4593.jpeg
+...    https://raw.githubusercontent.com/level-up-program/team-34-pyro-6051ea9d/main/tests/robot/images/move_function_model-crop.jpeg
 
 Test Template     Move character
 Library           MoveLibrary.py
