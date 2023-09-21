@@ -17,3 +17,11 @@ class TestCharacterEnterMap(TestCase):
         testobj = Character("")
         testvar = testobj.enterMap()
         self.assertEqual(testvar, 'Yes')
+
+class TestCharacterMapPosition(TestCase):
+    def test_init(self):
+        testobj = Character("")
+    #    stubbed_map = FakeMap()
+    #    testobj.enterMap(FakeMap)
+    #    testobj.getPosition() 
+    #    self.assertEqual(Position, 3,4)
