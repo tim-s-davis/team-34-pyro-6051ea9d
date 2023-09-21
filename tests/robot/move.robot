@@ -9,6 +9,52 @@ Test Template     Move character
 Library           MoveLibrary.py
 
 *** Test Cases ***                  startingX     startingY     startingMoveCount     direction     endingX     endingY     endingMoveCount
+Move Top Left Corner NORTH          1             1             1                     NORTH         1           1           2
+Move Top Left Corner EAST           1             1             1                     EAST          2           1           2
+Move Top Left Corner SOUTH          1             1             1                     SOUTH         1           2           2
+Move Top Left Corner WEST           1             1             1                     WEST          1           1           2
+
+Move Top Right Corner NORTH         10            1             1                     NORTH         10          1           2
+Move Top Right Corner EAST          10            1             1                     EAST          10          1           2
+Move Top Right Corner SOUTH         10            1             1                     SOUTH         10          2           2
+Move Top Right Corner WEST          10            1             1                     WEST          9           1           2
+
+Move Bottom Left Corner NORTH       1             10            1                     NORTH         1           9           2
+Move Bottom Left Corner EAST        1             10            1                     EAST          2           10          2
+Move Bottom Left Corner SOUTH       1             10            1                     SOUTH         1           10          2
+Move Bottom Left Corner WEST        1             10            1                     WEST          1           10          2
+
+Move Bottom Right Corner NORTH      10            10            1                     NORTH         9           10          2
+Move Bottom Right Corner EAST       10            10            1                     EAST          10          10          2
+Move Bottom Right Corner SOUTH      10            10            1                     SOUTH         10          10          2
+Move Bottom Right Corner WEST       10            10            1                     WEST          9           10          2
+
+Move on the Left edge of board      1             5             5                     NORTH         1           4           6
+Move on the Left edge of board      1             5             5                     EAST          2           5           6
+Move on the Left edge of board      1             5             5                     SOUTH         1           6           6
+Move on the Left edge of board      1             5             5                     WEST          1           5           6
+
+Move on the Top edge of board       5             1             5                     NORTH         5           1           6
+Move on the Top edge of board       5             1             5                     EAST          6           1           6
+Move on the Top edge of board       5             1             5                     SOUTH         5           2           6
+Move on the Top edge of board       5             1             5                     WEST          4           1           6
+
+Move on the Right edge of board     10            5             5                     NORTH         10          4           6
+Move on the Right edge of board     10            5             5                     EAST          10          5           6
+Move on the Right edge of board     10            5             5                     SOUTH         10          6           6
+Move on the Right edge of board     10            5             5                     WEST          9           5           6
+
+Move on the Bottom edge of board    5             10            5                     NORTH         5           9           6
+Move on the Bottom edge of board    5             10            5                     EAST          6           10          6
+Move on the Bottom edge of board    5             10            5                     SOUTH         5           10          6
+Move on the Bottom edge of board    5             10            5                     WEST          4           10          6
+
+Move in the middle of the board     5             5             10                    NORTH         5           4           11
+Move in the middle of the board     5             5             10                    EAST          6           5           11
+Move in the middle of the board     5             5             10                    SOUTH         5           6           11
+Move in the middle of the board     5             5             10                    WEST          4           5           11
+
+
 Move in the middle of the board     5             5             1                     NORTH         4           5           2
 Move on the edge of the board       1             1             5                     SOUTH         1           2           6
 
