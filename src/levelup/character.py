@@ -6,3 +6,8 @@ class Character:
             self.name = 'Character'
         else:
             self.name = character_name
+
+    def enterMap(map):
+        return 'Yes'
+
+
