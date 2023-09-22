@@ -4,6 +4,8 @@ Documentation
 ...     
 ...    Here's a picture of one of our working models from the camp:
 ...    https://raw.githubusercontent.com/level-up-program/team-34-pyro-6051ea9d/main/tests/robot/images/move_function_model-crop.jpeg
+...    Here's a link to our github repo:
+...    https://github.com/level-up-program/team-34-pyro-6051ea9d
 
 Test Template     Move character
 Library           MoveLibrary.py
@@ -29,30 +31,30 @@ Move Bottom Right Corner EAST       10            10            1               
 Move Bottom Right Corner SOUTH      10            10            1                     SOUTH         10          10          2
 Move Bottom Right Corner WEST       10            10            1                     WEST          9           10          2
 
-Move on the Left edge of board      1             5             5                     NORTH         1           4           6
-Move on the Left edge of board      1             5             5                     EAST          2           5           6
-Move on the Left edge of board      1             5             5                     SOUTH         1           6           6
-Move on the Left edge of board      1             5             5                     WEST          1           5           6
+Move Left edge of board NORTH       1             5             5                     NORTH         1           4           6
+Move Left edge of board EAST        1             5             5                     EAST          2           5           6
+Move Left edge of board SOUTH       1             5             5                     SOUTH         1           6           6
+Move Left edge of board WEST        1             5             5                     WEST          1           5           6
 
-Move on the Top edge of board       5             1             5                     NORTH         5           1           6
-Move on the Top edge of board       5             1             5                     EAST          6           1           6
-Move on the Top edge of board       5             1             5                     SOUTH         5           2           6
-Move on the Top edge of board       5             1             5                     WEST          4           1           6
+Move Top edge of board NORTH        5             1             5                     NORTH         5           1           6
+Move Top edge of board EAST         5             1             5                     EAST          6           1           6
+Move Top edge of board SOUTH        5             1             5                     SOUTH         5           2           6
+Move Top edge of board EAST         5             1             5                     WEST          4           1           6
 
-Move on the Right edge of board     10            5             5                     NORTH         10          4           6
-Move on the Right edge of board     10            5             5                     EAST          10          5           6
-Move on the Right edge of board     10            5             5                     SOUTH         10          6           6
-Move on the Right edge of board     10            5             5                     WEST          9           5           6
+Move Right edge of board NORTH      10            5             5                     NORTH         10          4           6
+Move Right edge of board EAST       10            5             5                     EAST          10          5           6
+Move Right edge of board SOUTH      10            5             5                     SOUTH         10          6           6
+Move Right edge of board EAST       10            5             5                     WEST          9           5           6
 
-Move on the Bottom edge of board    5             10            5                     NORTH         5           9           6
-Move on the Bottom edge of board    5             10            5                     EAST          6           10          6
-Move on the Bottom edge of board    5             10            5                     SOUTH         5           10          6
-Move on the Bottom edge of board    5             10            5                     WEST          4           10          6
+Move Bottom edge of board NORTH     5             10            5                     NORTH         5           9           6
+Move Bottom edge of board EAST      5             10            5                     EAST          6           10          6
+Move Bottom edge of board SOUTH     5             10            5                     SOUTH         5           10          6
+Move Bottom edge of board WEST      5             10            5                     WEST          4           10          6
 
-Move in the middle of the board     5             5             10                    NORTH         5           4           11
-Move in the middle of the board     5             5             10                    EAST          6           5           11
-Move in the middle of the board     5             5             10                    SOUTH         5           6           11
-Move in the middle of the board     5             5             10                    WEST          4           5           11
+Move Middle of the board NORTH      5             5             10                    NORTH         5           4           11
+Move Middle of the board EAST       5             5             10                    EAST          6           5           11
+Move Middle of the board SOUTH      5             5             10                    SOUTH         5           6           11
+Move Middle of the board WEST       5             5             10                    WEST          4           5           11
 
 
 Move in the middle of the board     5             5             1                     NORTH         4           5           2

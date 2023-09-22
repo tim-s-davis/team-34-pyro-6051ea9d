@@ -17,6 +17,7 @@ class MoveLibrary:
         self.controller.set_current_move_count(move_count)
 
     def move_in_direction(self, direction):
+        self.controller.initalize_game_for_testing()
         self.controller.set_character_position((self.start_x, self.start_y))
         self.controller.move(Direction[direction])
 
