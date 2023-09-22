@@ -1,3 +1,7 @@
+from levelup.position import Position
+from levelup.controller import Direction
+from levelup.gamemap import GameMap
+
 class Character:
     name = 'Character'
 
@@ -5,8 +9,7 @@ class Character:
         if character_name != "":
             self.name = character_name
 
-    def enterMap(map):
-        ARBITRARY_RET_CODE = 'Yes'
-        return ARBITRARY_RET_CODE
-
+    def enterMap(self, GameMap :GameMap):
+        self.GameMap = GameMap
+        self.current_position = self.GameMap.starting_position
 
