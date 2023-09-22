@@ -7,8 +7,8 @@ class Position:
         self.x = x
         self.y = y
     
-    def setPosition(self, x, y):
-        newPosition = list(self.point)
-        newPosition[0] = x
-        newPosition[1] = y
-        self.point = tuple(newPosition)
+    def __eq__(self, obj):
+        if self.x == obj.x and self.y == obj.y:
+            return True
+        else:
+            return False      
