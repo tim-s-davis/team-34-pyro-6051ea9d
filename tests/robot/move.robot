@@ -39,7 +39,7 @@ Move Left edge of board WEST        1             5             5               
 Move Top edge of board NORTH        5             1             5                     NORTH         5           1           6
 Move Top edge of board EAST         5             1             5                     EAST          6           1           6
 Move Top edge of board SOUTH        5             1             5                     SOUTH         5           2           6
-Move Top edge of board EAST         5             1             5                     WEST          4           1           6
+Move Top edge of board WEST         5             1             5                     WEST          4           1           6
 
 Move Right edge of board NORTH      10            5             5                     NORTH         10          4           6
 Move Right edge of board EAST       10            5             5                     EAST          10          5           6
