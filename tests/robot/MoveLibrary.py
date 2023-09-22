@@ -4,6 +4,7 @@ from levelup.direction import Direction
 class MoveLibrary:
     start_x: int
     start_y: int
+    move_count: int
 
     controller = GameController()
 
@@ -20,6 +21,22 @@ class MoveLibrary:
         self.controller.initalize_game_for_testing()
         self.controller.set_character_position((self.start_x, self.start_y))
         self.controller.move(Direction[direction])
+
+        print("POSITION" + str(self.controller.status.current_position))
+        
+        direction_mapped = None
+        if(direction == "NORTH"):
+            direction_mapped = Direction.NORTH
+        elif(direction == "SOUTH"):
+            direction_mapped = Direction.SOUTH
+        elif(direction == "EAST"):
+            direction_mapped = Direction.EAST
+        else:
+            direction_mapped = Direction.WEST
+
+        self.controller.move(direction_mapped)
+
+        print("POSITION" + str(self.controller.status.current_position))
 
     def character_xposition_should_be(self, expected):
         end_x = self.controller.status.current_position[0]
