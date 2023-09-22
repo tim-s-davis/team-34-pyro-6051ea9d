@@ -1,13 +1,12 @@
 class Character:
-    name = ""
+    name = 'Character'
 
     def __init__(self, character_name):
-        if character_name == "":
-            self.name = 'Character'
-        else:
+        if character_name != "":
             self.name = character_name
 
     def enterMap(map):
-        return 'Yes'
+        ARBITRARY_RET_CODE = 'Yes'
+        return ARBITRARY_RET_CODE
 
 
