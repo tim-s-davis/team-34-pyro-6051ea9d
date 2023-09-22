@@ -4,10 +4,16 @@ from levelup.gamemap import GameMap
 
 class Character:
     name = 'Character'
+    current_position :Position = Position(1, 1)
+    GameMap :GameMap = GameMap()
 
     def __init__(self, character_name):
         if character_name != "":
             self.name = character_name
+
+    def move(self, Direction :Direction) -> None:
+        self.current_position = self.GameMap.calculate_new_position(
+            self.current_position, Direction)
 
     def enterMap(self, GameMap :GameMap):
         self.GameMap = GameMap
