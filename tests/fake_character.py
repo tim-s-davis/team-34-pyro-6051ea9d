@@ -16,5 +16,5 @@ class FakeCharacter (Character):
         self.is_move_called = True
         self.last_move_direction = direction
 
-    def enter_map(self, map: Map) -> None:
+    def enter_map(self, map: FakeMap) -> None:
         self.is_enter_map_called = True
