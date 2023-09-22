@@ -1,6 +1,6 @@
 from levelup.position import Position
 from typing import Tuple
-from levelup.controller import Direction
+from levelup.direction import Direction
 
 class GameMap():
 

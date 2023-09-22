@@ -1,6 +1,6 @@
 from tests import FakeMap
 from levelup.character import Character
-from levelup.controller import Direction
+from levelup.direction import Direction
 from levelup.position import Position
 
 class FakeCharacter (Character):
