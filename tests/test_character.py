@@ -18,21 +18,21 @@ class TestCharacterEnterMap(TestCase):
     def test_init(self):
         testobj = Character("")
         stubbed_map = FakeMap()
-        testobj.enterMap(stubbed_map)
+        testobj.enter_map(stubbed_map)
         self.assertEqual(stubbed_map, testobj.GameMap)
 
 class TestCharacterMapPosition(TestCase):
     def test_init(self):
         testobj = Character("")
         stubbed_map = FakeMap()
-        testobj.enterMap(stubbed_map)
+        testobj.enter_map(stubbed_map)
         self.assertEqual(stubbed_map, testobj.GameMap)
         self.assertEqual(testobj.current_position, stubbed_map.starting_position)
 
     def test_move_updates_position(self):
         testobj = Character("")
         stubbed_map = FakeMap()
-        testobj.enterMap(stubbed_map)
+        testobj.enter_map(stubbed_map)
         
         testobj.move(Direction.EAST)
 

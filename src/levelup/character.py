@@ -15,7 +15,7 @@ class Character:
         self.current_position = self.GameMap.calculate_new_position(
             self.current_position, Direction)
 
-    def enterMap(self, GameMap :GameMap):
+    def enter_map(self, GameMap :GameMap):
         self.GameMap = GameMap
         self.current_position = self.GameMap.starting_position
 
