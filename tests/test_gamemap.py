@@ -1,6 +1,6 @@
 from unittest import TestCase
 from levelup.character import Character
-#from levelup.controller import Direction
+from levelup.controller import Direction
 from levelup.gamemap import GameMap
 from levelup.position import Position
 
